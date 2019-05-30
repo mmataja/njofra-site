@@ -10,10 +10,12 @@ class App extends Component {
         <div className="parallax-image">
           <Header />
         </div>
-      
+        <div>
+          <OurServices />
+        </div>
       </div>
     );
   }
-}
+};
 
 export default App;
