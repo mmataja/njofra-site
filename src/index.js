@@ -10,6 +10,7 @@ import './index.css';
 // *** Third party libraries ***
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import './fontAwesome';
 
 ReactDOM.render(
   <App />,
