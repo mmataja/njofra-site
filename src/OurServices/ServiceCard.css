@@ -1,0 +1,8 @@
+.card-image-container {
+    width: 300px;
+}
+.card-image {
+    height: 220px;
+    width: 100%;
+    display: block;
+}
