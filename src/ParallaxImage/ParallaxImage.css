@@ -1,0 +1,9 @@
+.parralax-image-container {
+    height: 50vh;
+    width: 100%;
+    background-image: url('https://images.megapixl.com/1629/16297478.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+};

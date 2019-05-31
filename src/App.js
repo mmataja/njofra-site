@@ -4,6 +4,7 @@ import './App.css';
 // *** Components ***
 import Header from './Header/Header';
 import OurServices from './OurServices/OurServices';
+import ParallaxImage from './ParallaxImage/ParallaxImage';
 
 
 class App extends Component {
@@ -15,6 +16,9 @@ class App extends Component {
         </div>
         <div>
           <OurServices />
+        </div>
+        <div>
+          <ParallaxImage />
         </div>
       </div>
     );
