@@ -5,6 +5,7 @@ import './App.css';
 import Header from './Header/Header';
 import OurServices from './OurServices/OurServices';
 import ParallaxImage from './ParallaxImage/ParallaxImage';
+import AboutUs from './AboutUs/AboutUs';
 
 
 class App extends Component {
@@ -16,6 +17,12 @@ class App extends Component {
         </div>
         <div>
           <OurServices />
+        </div>
+        <div>
+          <ParallaxImage />
+        </div>
+        <div>
+          <AboutUs />
         </div>
         <div>
           <ParallaxImage />
