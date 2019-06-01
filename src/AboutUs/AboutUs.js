@@ -8,7 +8,7 @@ const aboutUs = () => {
         <h1 className="display-1 p-3">O nama</h1>
       </div>
       <div className="col-md-8 d-flex justify-content-center mb-5">
-        <h4 className="text-center">
+        <h5 className="text-center mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           viverra nisl, eu maximus dolor. Nulla velit sem, rhoncus eu metus ac,
           fringilla molestie tortor. Aliquam volutpat vestibulum odio, a
@@ -16,7 +16,7 @@ const aboutUs = () => {
           vulputate est id ultrices. Mauris sodales tincidunt porta. Nunc ut
           euismod nunc. Nulla iaculis tincidunt mauris, ac scelerisque magna. In
           eu mi felis. Proin sed neque nisl.
-        </h4>
+        </h5>
       </div>
     </div>
   );
