@@ -7,6 +7,7 @@ import OurServices from './OurServices/OurServices';
 import ParallaxImage from './ParallaxImage/ParallaxImage';
 import AboutUs from './AboutUs/AboutUs';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 
 class App extends Component {
@@ -38,6 +39,9 @@ class App extends Component {
         </div>
         <div>
           <Contact />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );
