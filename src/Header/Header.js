@@ -20,7 +20,7 @@ const header = () => {
                                 <a className="nav-link" href="#4"><h2>Naše usluge</h2></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#"><h2>Projekti</h2></a>
+                                <a className="nav-link" href="#"><h2>Galerija</h2></a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#"><h2>O nama</h2></a>
