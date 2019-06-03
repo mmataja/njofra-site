@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Naslov 1",
+    "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
+    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "title": "Naslov 2",
+    "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
+    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "title": "Naslov 3",
+    "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
+    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "title": "Naslov 4",
+    "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
+    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  }
+]

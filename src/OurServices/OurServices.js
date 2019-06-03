@@ -1,6 +1,7 @@
 import React from 'react';
 import './OurServices.css';
 import ServiceCard from './ServiceCard';
+import OurServiceData from './OurServiceData.json';
 
 const ourServices = () => {
     return (
@@ -9,10 +10,13 @@ const ourServices = () => {
                 <h1 className="display-1 p-5">Naše usluge</h1>              
             </div>
             <div className="card-deck mb-5 col-10">
-                <ServiceCard />
-                <ServiceCard />
-                <ServiceCard />
-                <ServiceCard />
+                {OurServiceData.map((data, index) => (
+                    <ServiceCard 
+                        data={data}
+                        index={index}
+                        key={index} 
+                    />
+                ))}
             </div>
         </div>
     );
