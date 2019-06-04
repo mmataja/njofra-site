@@ -6,11 +6,16 @@ import OurService from './OurService';
 
 const ourServices = () => {
 
-    const [ourService, setOurService] = useState();
+    const [ourService, setOurService] = useState(false);
+    const [data, setData] = useState({
+        title: "",
+        description: "",
+        img: ""
+    });
     
-    const buttonclick = async serviceData => {
-        await setOurService(true);
-        console.log(ourService);
+    const buttonclick = serviceData => {
+        setOurService(!ourService);
+        setData(serviceData);
     }
 
     return (
@@ -19,8 +24,11 @@ const ourServices = () => {
                 <h1 className="display-1 p-5">Naše usluge</h1>              
             </div>
             <div className="card-deck mb-5 col-10">
-                <OurService />
-                {OurServiceData.map((data, index) => (
+                {ourService && <OurService 
+                    title={data.title}
+                    goBack={buttonclick}
+                />}
+                {!ourService && OurServiceData.map((data, index) => (
                     <ServiceCard 
                         data={data}
                         index={index}
