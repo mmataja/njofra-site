@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 // *** libraries ***
 // import { Link, animateScroll as scroll } from 'react-scroll';
+import './fontAwesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll';
 
 // *** Components ***
 import Header from './Header/Header';
@@ -27,6 +31,19 @@ class App extends Component {
       <div className="App">
         <div className="parallax-image">
           <Header />
+          <div className="h-35 d-flex justify-content-center align-items-center">
+            <Link 
+                activeClass="active"
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={1000} 
+            >
+              <h1 className="angle-down-color cursor-pointer">
+                <FontAwesomeIcon icon="angle-down"/>
+              </h1>
+            </Link>
+          </div>
         </div>
         <div id="services">
           <OurServices />

@@ -7,7 +7,17 @@
     background-position: center;
 }
 
+.h-35 {
+    height: 35%;
+}
 
 .cursor-pointer {
     cursor: pointer !important;
-  }
+}
+
+.angle-down-color {
+    color: rgba(0,0,0,.5);
+}
+.angle-down-color:hover {
+    color: rgba(0,0,0,.7)
+}
