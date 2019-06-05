@@ -1,8 +1,13 @@
 .card-image-container {
-    width: 300px;
+  width: 300px;
 }
 .card-image {
-    height: 210px;
-    width: 100%;
-    display: block;
+  height: 210px;
+  width: 100%;
+  display: block;
+}
+.card-shadow-box {
+  -webkit-box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
+  -moz-box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
+  box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
 }
