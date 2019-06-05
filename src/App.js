@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// *** libraries ***
+// import { Link, animateScroll as scroll } from 'react-scroll';
+
 // *** Components ***
 import Header from './Header/Header';
 import OurServices from './OurServices/OurServices';
@@ -19,29 +22,25 @@ class App extends Component {
     buttonText: 'Send Message'
   }
 
-  scrolltoEle = services => {
-    console.log(services);
-  }
-
   render(){
     return(
       <div className="App">
         <div className="parallax-image">
-          <Header clickScrollToEle={this.scrolltoEle} />
+          <Header />
         </div>
-        <div>
+        <div id="services">
           <OurServices />
         </div>
         <div>
           <ParallaxImage />
         </div>
-        <div>
+        <div id="about">
           <AboutUs />
         </div>
         <div>
           <ParallaxImage />
         </div>
-        <div>
+        <div id="contact">
           <Contact />
         </div>
         <div>
