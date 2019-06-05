@@ -6,7 +6,7 @@ import OurService from './OurService';
 
 const ourServices = () => {
 
-    const [ourService, setOurService] = useState(false);
+    const [isService, setIsService] = useState(false);
     const [data, setData] = useState({
         title: "",
         description: "",
@@ -14,7 +14,7 @@ const ourServices = () => {
     });
     
     const buttonclick = serviceData => {
-        setOurService(!ourService);
+        setIsService(!isService);
         setData(serviceData);
     }
 
@@ -24,18 +24,16 @@ const ourServices = () => {
                 <h1 className="display-1 p-5">Naše usluge</h1>              
             </div>
             <div className="card-deck mb-5 col-10">
-                {ourService && <OurService 
-                    title={data.title}
-                    goBack={buttonclick}
-                />}
-                {!ourService && OurServiceData.map((data, index) => (
-                    <ServiceCard 
-                        data={data}
-                        index={index}
-                        key={index}
-                        triggerOurService={buttonclick} 
-                    />
-                ))}
+                {isService ? <OurService title={data.title} goBack={buttonclick} /> 
+                            : OurServiceData.map((data, index) => (
+                                <ServiceCard 
+                                    data={data}
+                                    index={index}
+                                    key={index}
+                                    triggerOurService={buttonclick} 
+                                />
+                            ))
+                }
             </div>
         </div>
     );

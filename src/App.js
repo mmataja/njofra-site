@@ -17,13 +17,17 @@ class App extends Component {
     email: '',
     sent: false,
     buttonText: 'Send Message'
-}
+  }
+
+  scrolltoEle = services => {
+    console.log(services);
+  }
 
   render(){
     return(
       <div className="App">
         <div className="parallax-image">
-          <Header />
+          <Header clickScrollToEle={this.scrolltoEle} />
         </div>
         <div>
           <OurServices />

@@ -1,7 +1,12 @@
 import React from 'react';
 import './Header.css';
 
-const header = () => {
+const header = (props) => {
+
+    const serviceToScrollTo = service => {
+        props.clickScrollToEle(service);
+    }
+
     return (
         <div className="container-fluid d-flex justify-content-center w-75" expand="lg">
             <div className="d-flex flex-column align-items-center w-100">
@@ -16,17 +21,17 @@ const header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav d-flex justify-content-around w-100">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#4"><h2>Naše usluge</h2></a>
+                            <li className="nav-item" onClick={() => serviceToScrollTo('services')}>
+                                <a className="nav-link cursor-pointer"> <h2>Naše usluge</h2> </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><h2>Galerija</h2></a>
+                            <li className="nav-item" onClick={() => serviceToScrollTo('gallery')}>
+                                <a className="nav-link cursor-pointer"> <h2>Galerija</h2> </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><h2>O nama</h2></a>
+                            <li className="nav-item" onClick={() => serviceToScrollTo('aboutus')}>
+                                <a className="nav-link cursor-pointer"> <h2>O nama</h2> </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><h2>Kontakt</h2></a>
+                            <li className="nav-item" onClick={() => serviceToScrollTo('contact')}>
+                                <a className="nav-link cursor-pointer"> <h2>Kontakt</h2> </a>
                             </li>
                         </ul>
                     </div>
