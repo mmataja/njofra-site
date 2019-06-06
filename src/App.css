@@ -21,3 +21,21 @@
 .angle-down-color:hover {
     color: rgba(0,0,0,.7)
 }
+
+.angle-scroll-down:hover {
+    animation: scrollDown 1100ms linear infinite;
+}
+
+@keyframes scrollDown {
+    0%{
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+}

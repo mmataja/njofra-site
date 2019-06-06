@@ -39,7 +39,7 @@ class App extends Component {
                 smooth={true}
                 duration={1000} 
             >
-              <h1 className="angle-down-color cursor-pointer">
+              <h1 className="angle-down-color cursor-pointer angle-scroll-down">
                 <FontAwesomeIcon icon="angle-down"/>
               </h1>
             </Link>
