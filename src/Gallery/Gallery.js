@@ -10,9 +10,9 @@ const gallery = () => {
             <div className="mb-2">
                 <h1 className="display-1 p-3">Galerija</h1>
             </div>
-            <div className="w-100 d-flex justify-content-around flex-wrap">
+            <div className="d-flex justify-content-around flex-wrap">
                 {testArray.map((index => (
-                    <GalleryItem />
+                    <GalleryItem key={index} />
                 )))}
             </div>
         </div>
