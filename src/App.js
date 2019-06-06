@@ -15,6 +15,7 @@ import ParallaxImage from './ParallaxImage/ParallaxImage';
 import AboutUs from './AboutUs/AboutUs';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Gallery from './Gallery/Gallery';
 
 
 class App extends Component {
@@ -47,6 +48,12 @@ class App extends Component {
         </div>
         <div id="services">
           <OurServices />
+        </div>
+        <div>
+          <ParallaxImage />
+        </div>
+        <div id="gallery">
+          <Gallery />
         </div>
         <div>
           <ParallaxImage />
