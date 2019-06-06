@@ -10,6 +10,7 @@ const ourServices = () => {
     const [data, setData] = useState({
         title: "",
         description: "",
+        longDescription: "",
         img: ""
     });
     
@@ -19,12 +20,13 @@ const ourServices = () => {
     }
 
     return (
-        <div className="d-flex flex-column align-items-center mt-4 container-fluid">
-            <div className="mb-4">
+        <div className={isService ? "d-flex flex-column align-items-center container-fluid bg-black-transparent" : 
+                        "d-flex flex-column align-items-center mt-4 container-fluid"}>
+            <div className={isService ? "mb-4 text-white-50" : "mb-4"}>
                 <h1 className="display-1 p-5">Naše usluge</h1>              
             </div>
             <div className="card-deck mb-5 col-10">
-                {isService ? <OurService title={data.title} goBack={buttonclick} /> 
+                {isService ? <OurService title={data.title} description={data.longDescription} goBack={buttonclick} /> 
                             : OurServiceData.map((data, index) => (
                                 <ServiceCard 
                                     data={data}
