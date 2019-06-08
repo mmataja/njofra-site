@@ -1,10 +1,11 @@
 import React from 'react';
 import './GalleryItem.css';
 
-const galleryItem = () => {
+const galleryItem = (props) => {
+    console.log("PROPSSSS:", props);
     return (
-        <div className="gallery-img-container mb-3">
-            <img src="https://us.123rf.com/450wm/rfoxfoto/rfoxfoto1402/rfoxfoto140200201/26132593-building-contractor-putting-the-asphalt-roofing-on-a-large-commercial-apartment-building-development.jpg?ver=6" alt="slika"></img>
+        <div className="gallery-img-container d-flex justify-content-center">
+            <img className="img-fluid rounded" src={props.item.link} alt="slika"></img>
         </div>
     );
 };
