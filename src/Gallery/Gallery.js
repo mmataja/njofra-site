@@ -4,26 +4,21 @@ import './Gallery.css';
 import GalleryItem from './GalleryItem';
 
 const gallery = () => {
-    // const URL = "https://api.imgur.com/oauth2/authorize?client_id=2788e23f35a4225_type=REQUESTED_RESPONSE_TYPE&state=APPLICATION_STATE"
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
     const [data, setData] = useState({imgData: null, isLoading: false});
 
     useEffect(() => {
             const fetchData = async () => {
-                // const response = await axios("http://jsonplaceholder.typicode.com/users/1");
                 const response = await axios.get(URL, {
                     headers: {
                         Authorization: 'Client-ID 2788e23f35a4225'
                     }
                 });
                 const responseData = response.data;
-                console.log(responseData.data);
                 setData({imgData: responseData, isLoading: true});
         };
         fetchData();
     }, []);
-
-    console.log(data);
 
     return (
         <div>
