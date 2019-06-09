@@ -2,10 +2,9 @@ import React from 'react';
 import './GalleryItem.css';
 
 const galleryItem = (props) => {
-    console.log("PROPSSSS:", props);
     return (
-        <div className="gallery-img-container d-flex justify-content-center">
-            <img className="img-fluid rounded" src={props.item.link} alt="slika"></img>
+        <div className="gallery-img-container d-flex justify-content-center p-3">
+            <img className="rounded img-fit" src={props.item.link} alt="slika"></img>
         </div>
     );
 };

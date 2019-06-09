@@ -5,7 +5,15 @@ import GalleryItem from './GalleryItem';
 
 const gallery = () => {
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
-    const [data, setData] = useState({imgData: null, isLoading: false});
+    const [data, setData] = useState({
+        imgData: null, 
+        isLoading: false, 
+        limit: 0
+    });
+    const [loadMoreBtn, setLoadMoreBtn] = useState({
+        btnText: "Učitaj još",
+        isDisabled: false
+    })
 
     useEffect(() => {
             const fetchData = async () => {
@@ -15,10 +23,22 @@ const gallery = () => {
                     }
                 });
                 const responseData = response.data;
-                setData({imgData: responseData, isLoading: true});
+                setData({imgData: responseData, isLoading: true, limit: 6});
         };
         fetchData();
     }, []);
+
+    console.log(data);
+
+    const loadMore = () => {
+        let alreadyLoadedImages = data.imgData.data.images.length - data.limit;
+        if(alreadyLoadedImages > 6) {
+            setData({imgData: data.imgData, isLoading:true, limit: data.limit + 6});
+        } else {
+            setData({imgData: data.imgData, isLoading:true, limit: data.limit + alreadyLoadedImages})
+            setLoadMoreBtn({btnText: "Nema više cobra", isDisabled: true});
+        }
+    }
 
     return (
         <div>
@@ -27,10 +47,15 @@ const gallery = () => {
             </div>
             <div className="d-flex w-100 justify-content-center mb-5">
                 <div className="d-flex flex-wrap justify-content-center w-90 overflow-hidden">
-                { data.isLoading ? data.imgData.data.images.map((item, index) => {
-                   return( <GalleryItem  key={index} item={item}/> )
+                { data.isLoading ? data.imgData.data.images.slice(0, data.limit).map((item, index) => {
+                   return( 
+                       <GalleryItem  key={index} item={item} limit={data.limit}/>
+                    )
                 }) : "nekakav spinner" }
                 </div>
+            </div>
+            <div className="w-100 d-flex justify-content-center p-5 mb-5">
+                <button className="btn btn-secondary" onClick={loadMore} disabled={loadMoreBtn.isDisabled}>{loadMoreBtn.btnText}</button>
             </div>
         </div>
     );
