@@ -33,9 +33,13 @@ const gallery = () => {
     const loadMore = () => {
         let alreadyLoadedImages = data.imgData.data.images.length - data.limit;
         if(alreadyLoadedImages > 6) {
-            setData({imgData: data.imgData, isLoading:true, limit: data.limit + 6});
+            setData( prevState => {
+                return { ...prevState, limit: data.limit + 6};
+            });
         } else {
-            setData({imgData: data.imgData, isLoading:true, limit: data.limit + alreadyLoadedImages})
+            setData( prevState => {
+                return { ...prevState, limit: data.limit + alreadyLoadedImages};
+            });
             setLoadMoreBtn({btnText: "Nema više cobra", isDisabled: true});
         }
     }

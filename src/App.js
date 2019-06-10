@@ -19,14 +19,6 @@ import Gallery from './Gallery/Gallery';
 
 
 class App extends Component {
-  state = {
-    name: '',
-    message: '',
-    email: '',
-    sent: false,
-    buttonText: 'Send Message'
-  }
-
   render(){
     return(
       <div className="App">
@@ -46,7 +38,7 @@ class App extends Component {
             </Link>
           </div>
         </div>
-        <div id="services" className="h-80vh">
+        <div id="services" className="h-93vh">
           <OurServices />
         </div>
         <div>
