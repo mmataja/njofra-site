@@ -1,7 +1,7 @@
 import React from 'react';
 import './ParallaxImage.css';
 
-const parallaxImage = () => {
+const ParallaxImage = () => {
     return (
         <div className="parralax-image-container">
 
@@ -9,4 +9,4 @@ const parallaxImage = () => {
     );
 };
 
-export default parallaxImage;
+export default ParallaxImage;

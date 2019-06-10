@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const footer = () => {
+const Footer = () => {
     return (
         <div className="w-100 bg-danger d-flex justify-content-center">
             <div className="col-8">
@@ -14,4 +14,4 @@ const footer = () => {
     );
 };
 
-export default footer;
+export default Footer;

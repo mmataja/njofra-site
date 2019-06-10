@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Gallery.css';
 import GalleryItem from './GalleryItem';
 
-const gallery = () => {
+const Gallery = () => {
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
     const [data, setData] = useState({
         imgData: null, 
@@ -76,4 +76,4 @@ const gallery = () => {
     );
 };
 
-export default gallery;
+export default Gallery;

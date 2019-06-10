@@ -2,7 +2,7 @@ import React from "react";
 import "./OurService.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ourService = props => {
+const OurService = props => {
   return (
     <div>
       <div className="" onClick={props.goBack}><FontAwesomeIcon icon="arrow-left" size="4x" /></div>
@@ -18,7 +18,7 @@ const ourService = props => {
           />
         </div>
         <div className="d-flex flex-column justify-content-around w-50">
-          <div className>
+          <div>
             <p className="lead">
               {props.description}
             </p>
@@ -29,4 +29,4 @@ const ourService = props => {
   );
 };
 
-export default ourService;
+export default OurService;

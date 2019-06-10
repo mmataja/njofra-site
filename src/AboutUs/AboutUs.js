@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 
-const aboutUs = () => {
+const AboutUs = () => {
   return (
     <div className="d-flex flex-column align-items-center mt-5 container-fluid">
       <div className="mb-2">
@@ -22,4 +22,4 @@ const aboutUs = () => {
   );
 };
 
-export default aboutUs;
+export default AboutUs;

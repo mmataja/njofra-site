@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Link } from 'react-scroll';
 
-const header = (props) => {
+const Header = (props) => {
     return (
         <div className="container-fluid d-flex justify-content-center w-75" expand="lg">
             <div className="d-flex flex-column align-items-center w-100">
@@ -69,4 +69,4 @@ const header = (props) => {
     );
 };
 
-export default header;
+export default Header;

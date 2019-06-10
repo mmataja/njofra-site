@@ -4,7 +4,7 @@ import ServiceCard from './ServiceCard';
 import OurServiceData from './OurServiceData.json';
 import OurService from './OurService';
 
-const ourServices = () => {
+const OurServices = () => {
 
     const [isService, setIsService] = useState(false);
     const [data, setData] = useState({
@@ -41,4 +41,4 @@ const ourServices = () => {
     );
 };
 
-export default ourServices;
+export default OurServices;

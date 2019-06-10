@@ -2,7 +2,7 @@ import React from "react";
 import "./ServiceCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const serviceCard = (props) => {
+const ServiceCard = (props) => {
   return (
     <div className="card mb-5 card-shadow-box">
         <img className="card-img-top card-image" src={ props.data.img } alt="Roof" />
@@ -21,4 +21,4 @@ const serviceCard = (props) => {
   );
 };
 
-export default serviceCard;
+export default ServiceCard;
