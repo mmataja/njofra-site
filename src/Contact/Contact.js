@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import "./Contact.css";
 
 const Contact = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -9,18 +11,37 @@ const Contact = () => {
     message: "",
     isSent: false,
     buttonText: "Send Message"
-  })
+  });
 
-  console.log(formData);
-
-  const formSubmit = e => {
+  const formSubmit = async e => {
       e.preventDefault();
-  }
-  const handleNameChange = event => {
+
+      setFormData( prevState => {
+        return { ...prevState, buttonText: "...sending"}
+      });
+
+      let data = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message
+      }
+
+      try{
+        const sendMail = await axios.post('http://localhost:4000/test/mail', data);
+        console.log(sendMail);
+      } catch (error) {
+        console.log(error);
+      }
+      
+  };
+
+  const handleInputChange = event => {
+    event.persist();
     setFormData( prevState => {
-      return {...prevState, name: event.target.value}
+      return {...prevState, [event.target.name]: event.target.value}
     });
-  }
+  };
 
   return (
     <div className="d-flex flex-column align-items-center mt-4 container-fluid">
@@ -28,14 +49,23 @@ const Contact = () => {
         <h1 className="display-1 p-5">Kontakt</h1>
       </div>
       <div className="col-5 mb-5">
-        <form className="d-flex flex-column" onSubmit={(e) => formSubmit(e)}>
+        <form className="d-flex flex-column" method="post" onSubmit={(e) => formSubmit(e)}>
           <input type="text" placeholder="Name" name="name" className="contact-input mb-2"
-            onChange={handleNameChange}
+            onChange={handleInputChange}
             value={formData.name}
           />
-          <input type="email" placeholder="Email" name="email" className="contact-input mb-2"/>
-          <input type="text" placeholder="Phone" name="phone" className="contact-input mb-2"/>
-          <textarea name="message" id="" cols="30" rows="6" placeholder="Please write your message here" className="contact-input mb-2"></textarea>
+          <input type="email" placeholder="Email" name="email" className="contact-input mb-2"
+            onChange={handleInputChange}
+            value={formData.email}
+          />
+          <input type="text" placeholder="Phone" name="phone" className="contact-input mb-2"
+            onChange={handleInputChange}
+            value={formData.phone}
+          />
+          <textarea name="message" id="" cols="30" rows="6" placeholder="Please write your message here" className="contact-input mb-2" 
+            onChange={handleInputChange}
+            value={formData.message}
+          />
           <button type="submit" className="btn btn-dark w-25 align-self-end">{formData.buttonText}</button>
         </form>
       </div>

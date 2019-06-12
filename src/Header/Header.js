@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-scroll';
+import '../../public/markanovic_logo.png'
 
 const Header = (props) => {
     return (
@@ -8,7 +9,7 @@ const Header = (props) => {
             <div className="d-flex flex-column align-items-center w-100">
                 <div className="mt-3 mb-5 d-flex justify-content-center">
                     <a href="" className="navbar-brand mr-0">
-                        <img src="https://cdn.pixabay.com/photo/2017/03/19/20/19/ball-2157465__340.png" alt="" className="rounded-circle logo" />
+                        <img src="markanovic_logo.png" alt="markanovic_logo" className="logo" />
                     </a>
                 </div>
                 <nav className="navbar navbar-expand-lg navbar-light w-100">

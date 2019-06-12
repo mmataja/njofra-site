@@ -28,8 +28,6 @@ const Gallery = () => {
         fetchData();
     }, []);
 
-    console.log(data);
-
     const loadMore = () => {
         let alreadyLoadedImages = data.imgData.data.images.length - data.limit;
         if(alreadyLoadedImages > 6) {
