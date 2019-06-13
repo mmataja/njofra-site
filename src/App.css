@@ -29,19 +29,28 @@
 }
 
 .angle-scroll-down:hover {
-    animation: scrollDown 1100ms linear infinite;
+    animation: scrollDown 1500ms linear infinite;
 }
 
 @keyframes scrollDown {
     0%{
-        transform: translateY(0%);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(50%);
+        opacity: 0.8;
     }
     50% {
+        transform: translateY(100%);
+        opacity: 0.8;
+    }
+    75% {
         transform: translateY(50%);
         opacity: 0.8;
     }
     100% {
-        transform: translateY(150%);
-        opacity: 0;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
