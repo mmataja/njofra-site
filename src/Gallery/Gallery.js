@@ -13,7 +13,7 @@ const Gallery = () => {
     const [loadMoreBtn, setLoadMoreBtn] = useState({
         btnText: "Učitaj još",
         isDisabled: false
-    })
+    });
 
     useEffect(() => {
             const fetchData = async () => {

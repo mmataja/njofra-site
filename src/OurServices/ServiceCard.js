@@ -13,8 +13,8 @@ const ServiceCard = (props) => {
             </p>
         </div>
         <div className="card-footer">
-            <button type="button" className="btn btn-link d-flex align-items-center text-info" onClick={() => props.triggerOurService(props.data)}>
-                Saznaj više <FontAwesomeIcon icon="angle-double-right" className="ml-2" />
+            <button type="button" className="lead btn btn-link d-flex align-items-center text-info nounderline animate-double-right" onClick={() => props.triggerOurService(props.data)}>
+                Saznaj više <FontAwesomeIcon icon="angle-double-right" className="ml-2 animate" />
             </button>
         </div>
     </div>

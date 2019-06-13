@@ -23,7 +23,7 @@ const OurServices = () => {
         <div className={isService ? "d-flex flex-column align-items-center container-fluid bg-img-transparent" : 
                         "d-flex flex-column align-items-center mt-4 container-fluid"}>
             <div className="mb-4">
-                <h1 className="display-1 p-5">Naše usluge</h1>              
+                <h1 className="display-1 p-5">Naše usluge</h1>             
             </div>
             <div className="card-deck mb-5 col-10">
                 {isService ? <OurService title={data.title} description={data.longDescription} goBack={buttonclick} /> 
@@ -32,7 +32,7 @@ const OurServices = () => {
                                     data={data}
                                     index={index}
                                     key={index}
-                                    triggerOurService={buttonclick} 
+                                    triggerOurService={buttonclick}
                                 />
                             ))
                 }

@@ -11,3 +11,26 @@
   -moz-box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
   box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
 }
+
+.animate-double-right:hover > .animate {
+  animation: arrowAnimation 1500ms linear infinite;
+}
+.animate-double-right:hover {
+  color: orange !important;
+}
+
+.nounderline:hover {
+  text-decoration: none !important;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
