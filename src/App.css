@@ -38,15 +38,15 @@
         opacity: 1;
     }
     25% {
-        transform: translateY(50%);
+        transform: translateY(30%);
         opacity: 0.8;
     }
     50% {
-        transform: translateY(100%);
+        transform: translateY(60%);
         opacity: 0.8;
     }
     75% {
-        transform: translateY(50%);
+        transform: translateY(30%);
         opacity: 0.8;
     }
     100% {

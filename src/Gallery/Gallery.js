@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Gallery.css';
 import GalleryItem from './GalleryItem';
+import ImageModal from './ImageModal';
 
 const Gallery = () => {
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
@@ -13,6 +14,10 @@ const Gallery = () => {
     const [loadMoreBtn, setLoadMoreBtn] = useState({
         btnText: "Učitaj još",
         isDisabled: false
+    });
+    const [isModal, setIsModal] = useState({
+        showModal: false,
+        modalData: null
     });
 
     useEffect(() => {
@@ -50,6 +55,10 @@ const Gallery = () => {
         }
     }
 
+    const setModalData = data => {
+        setIsModal({showModal: true, modalData: data});
+    }
+
     return (
         <div>
             <div className="mb-2 w-100 d-flex justify-content-center mt-5">
@@ -59,7 +68,7 @@ const Gallery = () => {
                 <div className="d-flex flex-wrap justify-content-center w-90 overflow-hidden">
                 { data.isLoading ? data.imgData.data.images.slice(0, data.limit).map((item, index) => {
                    return( 
-                       <GalleryItem  key={index} item={item} limit={data.limit}/>
+                       <GalleryItem  key={index} item={item} limit={data.limit} modalBtn={setModalData}/>
                     )
                 }) : "nekakav spinner" }
                 </div>
@@ -70,6 +79,11 @@ const Gallery = () => {
                                         <div className="caret-up-div" onClick={collapseGallery}></div> 
                                     </div> : null}
             </div>
+            {isModal.showModal ? <ImageModal imgSrc={isModal.modalData.link} 
+                                            closeModal={() => setIsModal(prevState => {
+                                                return { ...prevState, showModal: false};
+                                            })}
+                                             imgDesc={isModal.modalData.description ? isModal.modalData.description : "Nema opisa"}/> : null}
         </div>
     );
 };
