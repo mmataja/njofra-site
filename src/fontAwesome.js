@@ -4,7 +4,8 @@ import {
     faCopyright, 
     faAngleDown, 
     faTimes, 
-    faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+    faArrowLeft,
+    faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     faAngleDoubleRight,
@@ -12,4 +13,5 @@ library.add(
     faAngleDown,
     faTimes,
     faArrowLeft,
+    faCaretUp
 );

@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Gallery.css';
 import GalleryItem from './GalleryItem';
 import ImageModal from './ImageModal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Gallery = () => {
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
@@ -75,8 +76,8 @@ const Gallery = () => {
             </div>
             <div className="w-100 d-flex justify-content-center p-5 mb-5">
                 <button className="btn btn-secondary" onClick={loadMore} disabled={loadMoreBtn.isDisabled}>{loadMoreBtn.btnText}</button>
-                {data.limit > 12 ? <div className="d-flex align-items-center ml-5 mb-2"> 
-                                        <div className="caret-up-div" onClick={collapseGallery}></div> 
+                {data.limit > 12 ? <div className="d-flex align-items-center ml-5" onClick={collapseGallery}>
+                                        <FontAwesomeIcon icon="caret-up" size="2x" />
                                     </div> : null}
             </div>
             {isModal.showModal ? <ImageModal imgSrc={isModal.modalData.link} 
