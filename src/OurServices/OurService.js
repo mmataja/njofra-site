@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const OurService = props => {
   return (
     <div>
-      <div className="" onClick={props.goBack}><FontAwesomeIcon icon="arrow-left" size="4x" /></div>
+      <div className="mt-4" onClick={props.goBack}><FontAwesomeIcon icon="arrow-left" size="4x" /></div>
       <div className="d-flex justify-content-center align-items-center mb-5 w-100">
         <h1 className="display-3 lead">{props.title}</h1>
       </div>

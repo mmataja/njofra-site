@@ -20,8 +20,8 @@ const OurServices = () => {
     }
 
     return (
-        <div className={isService ? "d-flex flex-column align-items-center container-fluid bg-img-transparent" : 
-                        "d-flex flex-column align-items-center mt-4 container-fluid"}>
+        <div className={isService ? "d-flex flex-column align-items-center pt-4 container-fluid bg-img-transparent" : 
+                        "d-flex flex-column align-items-center pt-4 container-fluid"}>
             <div className="mb-4">
                 <h1 className="display-1 p-5">Naše usluge</h1>             
             </div>

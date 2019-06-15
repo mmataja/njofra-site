@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ServiceCard = (props) => {
   return (
-    <div className="card mb-5 card-shadow-box">
+    <div className="card card-shadow-box">
         <img className="card-img-top card-image" src={ props.data.img } alt="Roof" />
         <div className="card-body">
             <h5 className="card-title">{ props.data.title }</h5>

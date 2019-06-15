@@ -13,7 +13,7 @@
 }
 
 .animate-double-right:hover > .animate {
-  animation: arrowAnimation 1500ms linear infinite;
+  animation: arrowAnimation 1s linear infinite;
 }
 .animate-double-right:hover {
   color: orange !important;
