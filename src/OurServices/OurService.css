@@ -3,3 +3,20 @@
     -moz-box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
     box-shadow: 10px 10px 13px 3px rgba(145, 145, 145, 1);
   }
+
+  .animate-double-left:hover > .animate {
+    animation: arrowAnimateLeft 1s linear infinite;
+    color: orange !important;
+  }
+
+  @keyframes arrowAnimateLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
