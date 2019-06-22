@@ -46,9 +46,9 @@ const Contact = () => {
   return (
     <div className="d-flex flex-column align-items-center mt-4 container-fluid">
       <div className="mb-4">
-        <h1 className="display-1 p-5">Kontakt</h1>
+        <h1 className="display-1 p-5 fs-85">Kontakt</h1>
       </div>
-      <div className="col-5 mb-5">
+      <div className="col-lg-5 col-md-8 col-sm-12 mb-5">
         <form className="d-flex flex-column" method="post" onSubmit={(e) => formSubmit(e)}>
           <input type="text" placeholder="Name" name="name" className="contact-input mb-2"
             onChange={handleInputChange}
@@ -66,7 +66,7 @@ const Contact = () => {
             onChange={handleInputChange}
             value={formData.message}
           />
-          <button type="submit" className="btn btn-dark w-25 align-self-end">{formData.buttonText}</button>
+          <button type="submit" className="btn btn-dark col-sm-12 align-self-end">{formData.buttonText}</button>
         </form>
       </div>
     </div>

@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Source Serif Pro', serif !important;
   background-color: #eeeeee !important;
 }
 
+/* +++++++++++++ FONT STYLSE +++++++++++++++ */
+.fs-85 {
+  font-size: 5.3125rem !important;
+}
+.fs-40 {
+  font-size: 2.5rem;
+}
+.fs-18 {
+  font-size: 1.125rem;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
+/* ++++++++++++ RESPONSIVE BREAKPOINTS ++++++++++++++ */
+@media (max-width: 1199.98px) {
+  .fs-85 {
+    font-size: 4.8rem !important;
+  }
+  .fs-40 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fs-85 {
+    font-size: 4rem !important;
+  }
+  .fs-40 {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+}

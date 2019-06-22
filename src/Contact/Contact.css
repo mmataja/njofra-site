@@ -16,3 +16,9 @@ textarea::placeholder {
 .contact-input {
     border: 1px solid black;
 }
+
+@media screen and (max-width: 767px) {
+    .w-25 {
+        width: 100% !important;
+    }
+}

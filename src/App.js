@@ -38,7 +38,7 @@ class App extends Component {
             </Link>
           </div>
         </div>
-        <div id="services" className="h-93vh">
+        <div id="services" className="h-100">
           <OurServices />
         </div>
         <div>

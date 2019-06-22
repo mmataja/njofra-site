@@ -26,7 +26,7 @@ const Header = (props) => {
                                 duration={1000} 
                             >
                                 <li className="nav-item">
-                                    <div className="nav-link cursor-pointer"> <h2>Naše usluge</h2> </div>
+                                    <div className="nav-link cursor-pointer"> <h2 className="fs-40 fw-600">Naše usluge</h2> </div>
                                 </li>
                             </Link>
                             <Link 
@@ -37,7 +37,7 @@ const Header = (props) => {
                                 duration={1400} 
                             >
                                 <li className="nav-item">
-                                    <div className="nav-link cursor-pointer"> <h2>Galerija</h2> </div>
+                                    <div className="nav-link cursor-pointer"> <h2 className="fs-40 fw-600">Galerija</h2> </div>
                                 </li>
                             </Link>
                             <Link 
@@ -48,7 +48,7 @@ const Header = (props) => {
                                 duration={1800} 
                             >
                                 <li className="nav-item">
-                                    <div className="nav-link cursor-pointer"> <h2>O nama</h2> </div>
+                                    <div className="nav-link cursor-pointer"> <h2 className="fs-40 fw-600">O nama</h2> </div>
                                 </li>
                             </Link>
                             <Link 
@@ -59,7 +59,7 @@ const Header = (props) => {
                                 duration={2200} 
                             >
                                 <li className="nav-item">
-                                    <div className="nav-link cursor-pointer"> <h2>Kontakt</h2> </div>
+                                    <div className="nav-link cursor-pointer"> <h2 className="fs-40 fw-600">Kontakt</h2> </div>
                                 </li>
                             </Link>
                         </ul>

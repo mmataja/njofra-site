@@ -3,11 +3,11 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="d-flex flex-column align-items-center mt-5 container-fluid">
+    <div className="d-flex flex-column align-items-center mt-5 container-fluid responsive-style">
       <div className="mb-2">
-        <h1 className="display-1 p-3">O nama</h1>
+        <h1 className="display-1 p-3 fs-85">O nama</h1>
       </div>
-      <div className="col-md-8 d-flex justify-content-center mb-5">
+      <div className="col-md-8 col-sm-10 d-flex justify-content-center mb-5">
         <h5 className="text-center mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           viverra nisl, eu maximus dolor. Nulla velit sem, rhoncus eu metus ac,

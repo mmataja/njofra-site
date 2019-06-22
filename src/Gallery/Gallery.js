@@ -63,10 +63,10 @@ const Gallery = () => {
     return (
         <div>
             <div className="mb-2 w-100 d-flex justify-content-center mt-5">
-                <h1 className="display-1 p-3">Galerija</h1>
+                <h1 className="display-1 p-3 fs-85">Galerija</h1>
             </div>
             <div className="d-flex w-100 justify-content-center">
-                <div className="d-flex flex-wrap justify-content-center w-90 overflow-hidden">
+                <div className="d-flex flex-wrap justify-content-center gallery-container overflow-hidden">
                 { data.isLoading ? data.imgData.data.images.slice(0, data.limit).map((item, index) => {
                    return( 
                        <GalleryItem  key={index} item={item} limit={data.limit} modalBtn={setModalData}/>

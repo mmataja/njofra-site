@@ -7,7 +7,7 @@ const ServiceCard = (props) => {
     <div className="card card-shadow-box">
         <img className="card-img-top card-image" src={ props.data.img } alt="Roof" />
         <div className="card-body">
-            <h5 className="card-title">{ props.data.title }</h5>
+            <h5 className="card-title fw-600">{ props.data.title }</h5>
             <p className="card-text">
                 { props.data.description }
             </p>
