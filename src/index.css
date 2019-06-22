@@ -7,7 +7,12 @@ body {
   background-color: #eeeeee !important;
 }
 
-/* +++++++++++++ FONT STYLSE +++++++++++++++ */
+/* ++++++++++++ PADDING +++++++++++++++++++ */
+.padding-5 {
+  padding: 3rem;
+}
+
+/* +++++++++++++ FONT STYLE +++++++++++++++ */
 .fs-85 {
   font-size: 5.3125rem !important;
 }
@@ -38,13 +43,26 @@ body {
   .fs-40 {
     font-size: 1.8rem;
   }
+  .fs-18 {
+    font-size: 1rem;
+  }
 
 }
 
 @media (max-width: 767.98px) {
-
+  .padding-5 {
+    padding: 2rem !important;
+  }
 }
 
 @media (max-width: 575.98px) {
-
+  .fs-85 {
+    font-size: 3rem !important;
+  }
+  .fs-40 {
+    font-size: 1.5rem;
+  }
+  .fs-18 {
+    font-size: 0.9rem;
+  }
 }

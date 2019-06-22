@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div className="d-flex flex-column align-items-center mt-4 container-fluid">
       <div className="mb-4">
-        <h1 className="display-1 p-5 fs-85">Kontakt</h1>
+        <h1 className="display-1 padding-5 fs-85">Kontakt</h1>
       </div>
       <div className="col-lg-5 col-md-8 col-sm-12 mb-5">
         <form className="d-flex flex-column" method="post" onSubmit={(e) => formSubmit(e)}>

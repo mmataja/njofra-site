@@ -74,7 +74,7 @@ const Gallery = () => {
                 }) : "nekakav spinner" }
                 </div>
             </div>
-            <div className="w-100 d-flex justify-content-center p-5 mb-5">
+            <div className="w-100 d-flex justify-content-center padding-5 mb-5">
                 <button className="btn btn-secondary" onClick={loadMore} disabled={loadMoreBtn.isDisabled}>{loadMoreBtn.btnText}</button>
                 {data.limit > 12 ? <div className="d-flex align-items-center ml-5" onClick={collapseGallery}>
                                         <FontAwesomeIcon icon="caret-up" size="2x" />
