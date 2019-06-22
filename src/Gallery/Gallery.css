@@ -9,3 +9,15 @@
 .gallery-container {
     width: 90%;
 }
+
+@media (max-width: 1199.98px) {
+    .gallery-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gallery-container {
+        width: 100%;
+    }
+}
