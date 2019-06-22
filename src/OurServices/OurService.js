@@ -10,17 +10,17 @@ const OurService = props => {
       </div>
       <div>
         <div className="d-flex justify-content-center align-items-center mb-5 w-100">
-          <h1 className="display-3 lead">{props.title}</h1>
+          <h1 className="fs-40 fw-600">{props.title}</h1>
         </div>
         <div className="service-content">
-          <div>
+          <div className="flex-1">
             <img
               src="https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
               className="img-thumbnail"
             />
           </div>
-          <div className="d-flex flex-column justify-content-around w-50">
+          <div className="d-flex flex-column justify-content-around service-container flex-1">
             <div>
               <p className="lead">
                 {props.description}

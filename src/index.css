@@ -7,6 +7,10 @@ body {
   background-color: #eeeeee !important;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 /* ++++++++++++ PADDING +++++++++++++++++++ */
 .padding-5 {
   padding: 3rem;

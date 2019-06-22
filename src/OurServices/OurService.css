@@ -16,8 +16,12 @@
   .service-content {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+  }
+
+  .service-container {
+    width: 100%;
   }
 
   @keyframes arrowAnimateLeft {
@@ -39,5 +43,20 @@
     }
     .w-50 {
       width: 100% !important;
+    }
+    .animate-double-left {
+      margin-bottom: 1.5rem;
+    }
+    .service-container {
+      margin-top: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lead {
+      font-size: 1rem !important;
+      text-align: start;
     }
   }
