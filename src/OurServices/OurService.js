@@ -13,7 +13,7 @@ const OurService = props => {
           <h1 className="fs-40 fw-600">{props.title}</h1>
         </div>
         <div className="service-content">
-          <div className="flex-1">
+          <div className="flex-1 mr-4">
             <img
               src="https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
