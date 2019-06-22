@@ -25,7 +25,7 @@ const OurServices = () => {
             <div className="mb-4">
                 <h1 className="display-1 padding-5 fs-85">Naše usluge</h1>             
             </div>
-            <div className="card-deck mb-5 col-lg-11 col-md-11 col-sm-12">
+            <div className="mb-5 card-container">
                 {isService ? <OurService title={data.title} description={data.longDescription} goBack={buttonclick} /> 
                             : OurServiceData.map((data, index) => (
                                 <ServiceCard 
