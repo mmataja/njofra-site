@@ -4,6 +4,7 @@ import './Gallery.css';
 import GalleryItem from './GalleryItem';
 import ImageModal from './ImageModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Loader from 'react-loader-spinner';
 
 const Gallery = () => {
     const URL = "https://api.imgur.com/3/account/mmataja/album/0LXIVFB";
@@ -31,7 +32,8 @@ const Gallery = () => {
                 const responseData = response.data;
                 setData({imgData: responseData, isLoading: true, limit: 6});
         };
-        fetchData();
+        setTimeout( () => fetchData(), 3000);
+        //fetchData();
     }, []);
 
     const loadMore = () => {
@@ -71,7 +73,7 @@ const Gallery = () => {
                    return( 
                        <GalleryItem  key={index} item={item} limit={data.limit} modalBtn={setModalData}/>
                     )
-                }) : "nekakav spinner" }
+                }) : <Loader type="Grid" color="orange" height="200" width="200" /> }
                 </div>
             </div>
             <div className="w-100 d-flex justify-content-center padding-5 mb-5">
