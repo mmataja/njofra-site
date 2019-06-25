@@ -32,8 +32,7 @@ const Gallery = () => {
                 const responseData = response.data;
                 setData({imgData: responseData, isLoading: true, limit: 6});
         };
-        setTimeout( () => fetchData(), 3000);
-        //fetchData();
+        fetchData();
     }, []);
 
     const loadMore = () => {
