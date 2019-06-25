@@ -10,6 +10,22 @@
     width: 90%;
 }
 
+.caretUp:hover {
+    animation: caretUpAnimation 1s linear infinite;
+}
+
+@keyframes caretUpAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 1199.98px) {
     .gallery-container {
         width: 95%;

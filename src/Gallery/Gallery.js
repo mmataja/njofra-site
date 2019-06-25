@@ -55,6 +55,9 @@ const Gallery = () => {
             setData({imgData: data.imgData, isLoading: true, limit: 6})
             setLoadMoreBtn({btnText: "Učitaj još", isDisabled: false});
         }
+        document.querySelector('#gallery').scrollIntoView({
+            block: "start"
+        });
     }
 
     const setModalData = data => {
@@ -62,7 +65,7 @@ const Gallery = () => {
     }
 
     return (
-        <div>
+        <div id="gallery">
             <div className="mb-2 w-100 d-flex justify-content-center mt-5">
                 <h1 className="display-1 p-3 fs-85">Galerija</h1>
             </div>
@@ -77,7 +80,7 @@ const Gallery = () => {
             </div>
             <div className="w-100 d-flex justify-content-center padding-5 mb-5">
                 <button className="btn btn-secondary" onClick={loadMore} disabled={loadMoreBtn.isDisabled}>{loadMoreBtn.btnText}</button>
-                {data.limit > 12 ? <div className="d-flex align-items-center ml-5" onClick={collapseGallery}>
+                {data.limit > 12 ? <div className="d-flex align-items-center ml-5 cursor-pointer caretUp" onClick={collapseGallery}>
                                         <FontAwesomeIcon icon="caret-up" size="2x" />
                                     </div> : null}
             </div>
