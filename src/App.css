@@ -1,6 +1,6 @@
 .parallax-image {
     height: 100vh;
-    background-image: url('https://cdn-images-1.medium.com/max/2600/1*lLNHg_D0ehCHzRLXgpglMA.png');
+    background-image: url('http://www.homesbuilder.org/wp-content/uploads/2018/10/In-Need-of-Roof-Repair-and-Maintenance-Read-on-to-Know-Whats-Important.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .angle-scroll-down:hover {
-    animation: scrollDown 1500ms linear infinite;
+    animation: scrollDown 1200ms linear infinite;
 }
 
 @keyframes scrollDown {
@@ -38,15 +38,15 @@
         opacity: 1;
     }
     25% {
-        transform: translateY(30%);
+        transform: translateY(20%);
         opacity: 0.8;
     }
     50% {
-        transform: translateY(60%);
-        opacity: 0.8;
+        transform: translateY(40%);
+        opacity: 0.4;
     }
     75% {
-        transform: translateY(30%);
+        transform: translateY(20%);
         opacity: 0.8;
     }
     100% {
