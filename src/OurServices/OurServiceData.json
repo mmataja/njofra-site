@@ -1,24 +1,24 @@
 [
   {
-    "title": "Naslov 1",
+    "title": "Krovopokrivački radovi",
+    "description": "Izrada i sanacija kosih i ravnih krovova",
+    "longDescription": "Phasellus convallis vehicula blandit. Morbi congue est ante, quisaliquam ipsum faucibus quis. Proin mauris lectus, lacinia necullamcorper id, lacinia eu ligula. Nunc a dignissim ligula, atlacinia est. Cras quis justo at diam vestibulum auctor vitae vitaemetus. Duis fermentum pretium odio vitae consectetur. Curabituregestas sapien non neque cursus, quis ultrices quam volutpat. Donec eu tempus erat, eu iaculis massa. Praesent quam ante, faucibus in viverra id, tempor ac mauris. Aliquam tellus metus, malesuada commodo nibh vestibulum, commodo consequat urna. Nammaximus tortor eget orci laoreet vulputate. Aliquam erat volutpat.",
+    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "title": "Limarski radovi",
     "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
     "longDescription": "Phasellus convallis vehicula blandit. Morbi congue est ante, quisaliquam ipsum faucibus quis. Proin mauris lectus, lacinia necullamcorper id, lacinia eu ligula. Nunc a dignissim ligula, atlacinia est. Cras quis justo at diam vestibulum auctor vitae vitaemetus. Duis fermentum pretium odio vitae consectetur. Curabituregestas sapien non neque cursus, quis ultrices quam volutpat. Donec eu tempus erat, eu iaculis massa. Praesent quam ante, faucibus in viverra id, tempor ac mauris. Aliquam tellus metus, malesuada commodo nibh vestibulum, commodo consequat urna. Nammaximus tortor eget orci laoreet vulputate. Aliquam erat volutpat.",
     "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   },
   {
-    "title": "Naslov 2",
+    "title": "Izolaterski radovi",
     "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
     "longDescription": "Phasellus convallis vehicula blandit. Morbi congue est ante, quisaliquam ipsum faucibus quis. Proin mauris lectus, lacinia necullamcorper id, lacinia eu ligula. Nunc a dignissim ligula, atlacinia est. Cras quis justo at diam vestibulum auctor vitae vitaemetus. Duis fermentum pretium odio vitae consectetur. Curabituregestas sapien non neque cursus, quis ultrices quam volutpat. Donec eu tempus erat, eu iaculis massa. Praesent quam ante, faucibus in viverra id, tempor ac mauris. Aliquam tellus metus, malesuada commodo nibh vestibulum, commodo consequat urna. Nammaximus tortor eget orci laoreet vulputate. Aliquam erat volutpat.",
     "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   },
   {
-    "title": "Naslov 3",
-    "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
-    "longDescription": "Phasellus convallis vehicula blandit. Morbi congue est ante, quisaliquam ipsum faucibus quis. Proin mauris lectus, lacinia necullamcorper id, lacinia eu ligula. Nunc a dignissim ligula, atlacinia est. Cras quis justo at diam vestibulum auctor vitae vitaemetus. Duis fermentum pretium odio vitae consectetur. Curabituregestas sapien non neque cursus, quis ultrices quam volutpat. Donec eu tempus erat, eu iaculis massa. Praesent quam ante, faucibus in viverra id, tempor ac mauris. Aliquam tellus metus, malesuada commodo nibh vestibulum, commodo consequat urna. Nammaximus tortor eget orci laoreet vulputate. Aliquam erat volutpat.",
-    "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-  },
-  {
-    "title": "Naslov 4",
+    "title": "Ostali završni radovi",
     "description": "This is a wider card with supporting text below as a natural lead-into additional content. This content is a little bit longer. Curabitur ullamcorper libero odio, ut aliquet ligula scelerisque non. Ut consequat lacinia dui et vestibulum. Etiam justo lacus, laoreet vel tellus ac, fermentum varius eros. Nullam egestas commodo sapien id interdum.",
     "longDescription": "Phasellus convallis vehicula blandit. Morbi congue est ante, quisaliquam ipsum faucibus quis. Proin mauris lectus, lacinia necullamcorper id, lacinia eu ligula. Nunc a dignissim ligula, atlacinia est. Cras quis justo at diam vestibulum auctor vitae vitaemetus. Duis fermentum pretium odio vitae consectetur. Curabituregestas sapien non neque cursus, quis ultrices quam volutpat. Donec eu tempus erat, eu iaculis massa. Praesent quam ante, faucibus in viverra id, tempor ac mauris. Aliquam tellus metus, malesuada commodo nibh vestibulum, commodo consequat urna. Nammaximus tortor eget orci laoreet vulputate. Aliquam erat volutpat.",
     "img": "https://images.pexels.com/photos/233267/pexels-photo-233267.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
