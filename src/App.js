@@ -32,7 +32,6 @@ class App extends Component {
             >
               <h1 className="angle-down-color cursor-pointer angle-scroll-down p-3">
                 <FontAwesomeIcon icon="angle-down" />
-                test
               </h1>
             </Link>
           </div>
